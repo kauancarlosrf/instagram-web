@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from './Icon';
-import { dados } from '../../../data/dados';
+import { dadosUsuario } from '../../../data/dados';
 import { UserProfileImage, Container } from './style';
 
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
@@ -29,7 +29,7 @@ export default function ListaIcons() {
         <Icon link='#'>
           <FavoriteBorderOutlinedIcon sx={{ fontSize: 27 }} />
         </Icon>
-        <UserProfileImage src={dados.userImg} alt={`Foto do perfil de ${dados.userName}`} />
+        <UserProfileImage src={dadosUsuario.userImg} alt={`Foto do perfil de ${dadosUsuario.userName}`} />
       </Container>
     </>
   );

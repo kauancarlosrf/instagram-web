@@ -5,7 +5,7 @@ import BarraDePesquisa from './BarraDePesquisa';
 //style
 import { TopoCompleto, MenuTopo } from './style';
 //icons e images
-import LogoInstagramImg from '../../assets/images/instagramlogoescrita.png';
+import LogoInstagramImg from '../../assets/images/logo.png';
 
 
 export default function Topo() {
