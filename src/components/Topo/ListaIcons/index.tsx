@@ -14,10 +14,10 @@ export default function ListaIcons() {
   return (
     <>
       <Container>
-        <Icon link='#'>
+        <Icon link='/'>
           <HomeOutlinedIcon sx={{ fontSize: 27 }} />
         </Icon>
-        <Icon link='#'>
+        <Icon link='/direct/inbox/'>
           <SendOutlinedIcon sx={{ fontSize: 27 }} />
         </Icon>
         <Icon link='#'>

@@ -7,4 +7,6 @@ export const Container = styled.div`
 
   border: 1px solid rgb(219, 219, 219);
   border-radius: 8px;
+
+  background-color: #fff;
 `;

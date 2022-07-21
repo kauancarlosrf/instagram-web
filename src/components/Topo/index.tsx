@@ -15,7 +15,7 @@ export default function Topo() {
       <TopoCompleto>
 
         <MenuTopo>
-          <Logo href="#" image={LogoInstagramImg} />
+          <Logo href="/" image={LogoInstagramImg} />
           
           <BarraDePesquisa placeholder='Pesquisar' />
 

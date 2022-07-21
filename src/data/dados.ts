@@ -43,7 +43,7 @@ export const sugestoesParaSeguir = [
     nameAccount: 'rafaelbrod...',
   },
   {
-    userName: "Kauan C. Rigoleto",
+    userName: "Kauan Certi Cenci",
     imgPerfil: FabioSalgadoPerfilImg,
     nameAccount: 'padreleona...',
   },
@@ -53,7 +53,7 @@ export const sugestoesParaSeguir = [
     nameAccount: 'omiguelsor...',
   },
   {
-    userName: "Kauan C. Rigoleto",
+    userName: "Kauan Certi Cenci",
     imgPerfil: MiguelSorianiPerfilImg,
     nameAccount: 'vitormanoe...',
   },
@@ -61,5 +61,63 @@ export const sugestoesParaSeguir = [
     userName: "Kauan C. Rigoleto",
     imgPerfil: PadreLeonardoPerfilImg,
     nameAccount: 'lucasmont...',
+  },
+];
+
+export const dadosPosts = [
+  {
+    nameAccount: 'arthur_berto',
+    imgPerfil: LucasMontanoPerfilImg,
+    imgPost: FabioAkitaPerfilImg,
+    quantidadeCurtidas: 56,
+    quantidadeComentarios: 89,
+    tempoAtras: '15 MINUTOS',
+    descricao: 'Esta é a descrição do post ok Esta e uma descrição de um post do insta'
+  },
+  {
+    nameAccount: 'joao_fujii',
+    imgPerfil: FabioAkitaPerfilImg,
+    imgPost: LucasMontanoPerfilImg,
+    quantidadeCurtidas: 143,
+    quantidadeComentarios: 90,
+    tempoAtras: '3 HORAS',
+    descricao: 'Esta é a descrição do post ok Esta e uma descrição de um post do insta'
+  },
+  {
+    nameAccount: 'arthur_berto',
+    imgPerfil: LucasMontanoPerfilImg,
+    imgPost: FabioAkitaPerfilImg,
+    quantidadeCurtidas: 56,
+    quantidadeComentarios: 71,
+    tempoAtras: '15 MINUTOS',
+    descricao: 'Esta é a descrição do post ok Esta e uma descrição de um post do insta'
+  },
+];
+
+export const listaDirects = [
+  {
+    imgPerfil: LucasMontanoPerfilImg,
+    userName: 'Kauan Certi Cenci',
+    ultimaVezOnline: '15 h'
+  },
+  {
+    imgPerfil: FabioSalgadoPerfilImg,
+    userName: 'João Da Silva',
+    ultimaVezOnline: '13 h'
+  },
+  {
+    imgPerfil: FabioAkitaPerfilImg,
+    userName: 'Pereira Matieus',
+    ultimaVezOnline: '15 sem'
+  },
+  {
+    imgPerfil: MiguelSorianiPerfilImg,
+    userName: 'Matheus Cascão',
+    ultimaVezOnline: '15 min'
+  },
+  {
+    imgPerfil: PadreLeonardoPerfilImg,
+    userName: 'João Vitor',
+    ultimaVezOnline: '2 d'
   },
 ];

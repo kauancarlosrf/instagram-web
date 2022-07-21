@@ -10,7 +10,9 @@ export const Container = styled.div`
   gap: 15px;
   
   padding: 16px 0;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+
+  background-color: #fff;
   
   border: 1px solid rgb(219, 219, 219);
   border-radius: 8px;
