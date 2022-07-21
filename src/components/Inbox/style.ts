@@ -7,14 +7,16 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  margin-top: 75px;
+  padding: 75px 20px 20px 20px;
+
 `;
 
 export const BoxMain = styled.div`
   display: flex;
 
-  width: 933px;
-  height: 792px;
+  width: 100%;
+  max-width: 935px;
+  height: 100%;
 
   border: 1px solid rgb(219, 219, 219);
   border-radius: 4px;

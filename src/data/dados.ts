@@ -120,4 +120,24 @@ export const listaDirects = [
     userName: 'João Vitor',
     ultimaVezOnline: '2 d'
   },
+  {
+    imgPerfil: FabioAkitaPerfilImg,
+    userName: 'Pereira Matieus',
+    ultimaVezOnline: '15 sem'
+  },
+  {
+    imgPerfil: MiguelSorianiPerfilImg,
+    userName: 'Matheus Cascão',
+    ultimaVezOnline: '15 min'
+  },
+  {
+    imgPerfil: PadreLeonardoPerfilImg,
+    userName: 'João Vitor',
+    ultimaVezOnline: '2 d'
+  },
+  {
+    imgPerfil: FabioAkitaPerfilImg,
+    userName: 'Pereira Matieus Creuza',
+    ultimaVezOnline: '15 sem'
+  },
 ];

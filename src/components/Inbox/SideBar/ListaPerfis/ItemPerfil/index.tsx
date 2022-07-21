@@ -1,4 +1,3 @@
-import { PropaneSharp } from "@mui/icons-material";
 import React from "react";
 import { Container, Image, BoxNomePerfilEInformacoes, UserName, UltimasInformacoes } from './style';
 

@@ -21,6 +21,8 @@ export const Image =styled.img`
 export const BoxNomePerfilEInformacoes = styled.div`
   display: flex;
   flex-direction: column;
+
+  gap: 3px;
 `;
 
 export const UserName = styled.span`

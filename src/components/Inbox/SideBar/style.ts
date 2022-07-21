@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 350px;
   height: 100%;
 
+  border-right: 1px solid rgb(219, 219, 219);
 `;
 
 export const BoxChangeAccount = styled.div`
@@ -16,6 +17,5 @@ export const BoxChangeAccount = styled.div`
 
   padding: 0 20px;
 
-  border-right: 1px solid rgb(219, 219, 219);
   border-bottom: 1px solid rgb(219, 219, 219);
 `;
