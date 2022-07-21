@@ -40,27 +40,27 @@ export const sugestoesParaSeguir = [
   {
     userName: "Kauan C. Rigoleto",
     imgPerfil: LucasMontanoPerfilImg,
-    nameAccount: 'rafaelbrod...',
+    nameAccount: 'rafaelbrod',
   },
   {
     userName: "Kauan Certi Cenci",
     imgPerfil: FabioSalgadoPerfilImg,
-    nameAccount: 'padreleona...',
+    nameAccount: 'padreleona',
   },
   {
     userName: "Kauan C. Rigoleto",
     imgPerfil: FabioAkitaPerfilImg,
-    nameAccount: 'omiguelsor...',
+    nameAccount: 'omiguelsor',
   },
   {
     userName: "Kauan Certi Cenci",
     imgPerfil: MiguelSorianiPerfilImg,
-    nameAccount: 'vitormanoe...',
+    nameAccount: 'vitormanoe',
   },
   {
     userName: "Kauan C. Rigoleto",
     imgPerfil: PadreLeonardoPerfilImg,
-    nameAccount: 'lucasmont...',
+    nameAccount: 'lucasmont',
   },
 ];
 

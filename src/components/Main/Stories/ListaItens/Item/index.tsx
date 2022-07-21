@@ -5,13 +5,14 @@ import { ButtonContainer, Border, Image, NomePerfil } from './style';
 type Props = {
   imgPerfil: any;
   namePerfil: string;
+  nameAccount: string;
 }
 
 export default function Item(props: Props) {
 
   return (
     <>
-      <ButtonContainer>
+      <ButtonContainer href={`/stories/${props.nameAccount}/`}>
         <Border>
           <Image src={props.imgPerfil} alt={`${props.namePerfil}`} />
         </Border>

@@ -9,7 +9,7 @@ export default function Profile() {
 
       <Image src={dadosUsuario.userImg} alt={`Imagem de ${dadosUsuario.userName}`} />
       <InformacoesConta>
-        <LinkNomeDaConta href="#">{dadosUsuario.nameAccount}</LinkNomeDaConta>
+        <LinkNomeDaConta href={`/${dadosUsuario.nameAccount}/`}>{dadosUsuario.nameAccount}</LinkNomeDaConta>
         <NomeDoUsuario>{dadosUsuario.userName}</NomeDoUsuario>
       </InformacoesConta>
       <MudarDeConta>

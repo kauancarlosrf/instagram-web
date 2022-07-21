@@ -13,7 +13,7 @@ export default function Suggestion() {
 
             <Image src={item.imgPerfil} alt={`Imagem de ${item.nameAccount}`} />
             <InformacoesConta>
-              <LinkNomeDaConta href="#">{item.nameAccount}</LinkNomeDaConta>
+              <LinkNomeDaConta href={`/${item.nameAccount}/`}>{item.nameAccount}</LinkNomeDaConta>
               <NomeDoUsuario>{item.userName}</NomeDoUsuario>
             </InformacoesConta>
             <SeguirAConta>

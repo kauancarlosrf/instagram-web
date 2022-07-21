@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonContainer = styled.button`
+export const ButtonContainer = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +11,7 @@ export const ButtonContainer = styled.button`
 
   padding: 0 6px;
 
+  text-decoration: none;
 `;
 
 export const Border = styled.div`
