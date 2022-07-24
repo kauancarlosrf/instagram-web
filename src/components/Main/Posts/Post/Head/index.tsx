@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Header, Image,NameAccount, MaisOpcoes } from './style';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import Modal from './Modal';
 
 type Props = {
   imgPerfil: any;
@@ -16,8 +16,8 @@ export default function Head(props: Props) {
           <Image src={props.imgPerfil} alt={`Imagem de ${props.nameAccount}`} />
           <NameAccount>{props.nameAccount}</NameAccount>
         </Header>
-        <MaisOpcoes>
-          <MoreHorizIcon />
+        <MaisOpcoes >
+          <Modal />
         </MaisOpcoes>
       </Container>
     </>
