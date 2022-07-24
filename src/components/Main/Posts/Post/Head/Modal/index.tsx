@@ -1,11 +1,10 @@
 import * as React from 'react';
 //style:
-import { BotaoOpenModal } from './style';
+import { BotaoOpenModal, Botao, Hr } from './style';
 import clsx from 'clsx';
 import { styled, Box, Theme } from '@mui/system';
 import ModalUnstyled from '@mui/base/ModalUnstyled';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import Button from '@mui/material/Button';
 
 const BackdropUnstyled = React.forwardRef<
   HTMLDivElement,
@@ -46,13 +45,15 @@ const Backdrop = styled(BackdropUnstyled)`
 
 const style = (theme: Theme) => ({
   display: 'flex',
+  flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
+
   width: 400,
-  height: 
+  height: 335,
+
   bgcolor: theme.palette.mode === 'dark' ? '#0A1929' : 'white',
-  border: '2px solid currentColor',
-  padding: '16px 32px 24px 32px',
+  borderRadius: 3,
 });
 
 export default function ModalUnstyledDemo() {
@@ -73,13 +74,19 @@ export default function ModalUnstyledDemo() {
         components={{ Backdrop }}
       >
         <Box sx={style}>
-          <Button color="error">Report</Button>
-          <Button color="error">Unfollow</Button>
-          <Button>Go to post</Button>
-          <Button>Share to...</Button>
-          <Button>Copy link</Button>
-          <Button>Embed</Button>
-          <Button>Cancelar</Button>
+          <Botao color="error">Report</Botao>
+            <Hr />
+          <Botao color="error">Unfollow</Botao>
+            <Hr />
+          <Botao>Go to post</Botao>
+            <Hr />
+          <Botao>Share to...</Botao>
+            <Hr />
+          <Botao>Copy link</Botao>
+            <Hr />
+          <Botao>Embed</Botao>
+            <Hr />
+          <Botao onClick={handleClose}>Cancelar</Botao>
         </Box>
       </Modal>
     </div>
