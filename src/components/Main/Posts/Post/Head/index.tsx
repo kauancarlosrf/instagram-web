@@ -14,7 +14,7 @@ export default function Head(props: Props) {
       <Container>
         <Header>
           <Image src={props.imgPerfil} alt={`Imagem de ${props.nameAccount}`} />
-          <NameAccount>{props.nameAccount}</NameAccount>
+          <NameAccount href={`/${props.nameAccount}/`}>{props.nameAccount}</NameAccount>
         </Header>
         <MaisOpcoes >
           <Modal />

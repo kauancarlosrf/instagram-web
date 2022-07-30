@@ -140,4 +140,9 @@ export const listaDirects = [
     userName: 'Pereira Matieus Creuza',
     ultimaVezOnline: '15 sem'
   },
+  {
+    imgPerfil: LucasMontanoPerfilImg,
+    userName: 'Kauan Certi Cenci',
+    ultimaVezOnline: '15 h'
+  },
 ];

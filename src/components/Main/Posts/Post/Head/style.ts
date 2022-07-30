@@ -31,6 +31,8 @@ export const NameAccount = styled.a`
   font-size: 14px;
   text-decoration: none;
 
+  color: #262626;
+
   padding: 2px;
   margin-left: 10px;
 `;
