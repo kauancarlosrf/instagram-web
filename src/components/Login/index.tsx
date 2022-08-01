@@ -2,7 +2,7 @@ import React, { useState } from "react";
 //style
 import { Login, Container, Logo, Cadastro, ButtonLogin, Borda, DivBorda, TextOr, Input,
   EntrarComFacebook, EsqueceuASenha, TextCadastro, CriarConta, TextObtem, Download, Apple,
-  GPlay, LogoFacebook
+  GPlay, LogoFacebook, ButtonLoginDisabled
 } from './style';
 //components
 import Rodape from '../Rodape';
@@ -25,7 +25,6 @@ export default function Index() {
 
   return (
     <Container>
-        
       <Login onSubmit={handleSubmit}>
         <Logo src={InstagramImg} />
 
@@ -47,13 +46,15 @@ export default function Index() {
           value={senha}
         />
 
-        <ButtonLogin id="buttonLogin" type="submit">Iniciar sessão</ButtonLogin>
+        {
+          email.length >= 1 && senha.length >= 6
+          ? <ButtonLogin id="buttonLogin" type="submit">Iniciar sessão</ButtonLogin>
+          : <ButtonLoginDisabled disabled id="buttonLogin" type="submit">Iniciar sessão</ButtonLoginDisabled>
+        }
 
         <DivBorda> <Borda/><TextOr>OU</TextOr><Borda/> </DivBorda>
 
-        <EntrarComFacebook>
-          <LogoFacebook src={FacebookLogoImg} />Entrar com o Facebook
-        </EntrarComFacebook>
+        <EntrarComFacebook><LogoFacebook src={FacebookLogoImg} />Entrar com o Facebook</EntrarComFacebook>
 
         <EsqueceuASenha href="/accounts/password/reset/">Esqueceu a senha?</EsqueceuASenha>
       </Login>
@@ -70,7 +71,6 @@ export default function Index() {
       </Download>
 
       <Rodape />
-    
     </Container>
   );
 }

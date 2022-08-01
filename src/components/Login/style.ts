@@ -79,8 +79,7 @@ export const Input = styled.input`
 `;
 
 // Componentes 
-
-export const ButtonLogin = styled.button`
+export const ButtonLoginDisabled = styled.button`
   width: 269px;
   height: 30px;
 
@@ -94,6 +93,10 @@ export const ButtonLogin = styled.button`
   line-height: 18px;
   font-weight: 600;
   font-size: 14px;
+`
+export const ButtonLogin = styled(ButtonLoginDisabled)`
+  background-color: #0095F6;
+  cursor: pointer;
 `
 
 export const DivBorda = styled.div`
