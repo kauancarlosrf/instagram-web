@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 //style
 import { Login, Container, Logo, Cadastro, ButtonLogin, Borda, DivBorda, TextOr, Input,
-  EntrarComFacebook, EsqueceuASenha, TextCadastro,CadastroText, TextObtem, Download, Apple,
+  EntrarComFacebook, EsqueceuASenha, TextCadastro, CriarConta, TextObtem, Download, Apple,
   GPlay, LogoFacebook
 } from './style';
 //components
@@ -55,11 +55,11 @@ export default function Index() {
           <LogoFacebook src={FacebookLogoImg} />Entrar com o Facebook
         </EntrarComFacebook>
 
-        <EsqueceuASenha>Esqueceu a senha?</EsqueceuASenha>
+        <EsqueceuASenha href="/accounts/password/reset/">Esqueceu a senha?</EsqueceuASenha>
       </Login>
       
       <Cadastro>
-        <TextCadastro>Não tem uma conta?<CadastroText>Cadastre-se</CadastroText></TextCadastro>
+        <TextCadastro>Não tem uma conta?<CriarConta href="/register/">Cadastre-se</CriarConta></TextCadastro>
       </Cadastro>
 
       <TextObtem>Obtém a aplicação.</TextObtem>

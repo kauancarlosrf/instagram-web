@@ -143,12 +143,14 @@ export const LogoFacebook = styled.img`
   margin-right: 8px;
 `
 
-export const EsqueceuASenha = styled.div`
+export const EsqueceuASenha = styled.a`
   font-size: 12px;
   color: #00376B;
   line-height: 16px;
   letter-spacing: normal;
   margin: auto;
+
+  text-decoration: none;
 `
 
 export const TextCadastro = styled.div`
@@ -159,13 +161,15 @@ export const TextCadastro = styled.div`
   color: #262626;
 `
 
-export const CadastroText = styled.div`
+export const CriarConta = styled.a`
   font-size:14px;
   line-height: 18px;
   color: #0095f6;
   font-weight: 500;
 
   margin-left: 5px;
+
+  text-decoration: none;
 `
 
 export const TextObtem = styled.div`
