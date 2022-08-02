@@ -1,13 +1,10 @@
 import React from "react";
+import ErrorNotFound from '../../components/ErrorNotFound';
 
 export default function NotFound() {
-
   return (
     <>
-
-      {/* Página NotFound 404 */}
-      ERROR 404
-      
+      <ErrorNotFound />
     </>
   );
 }

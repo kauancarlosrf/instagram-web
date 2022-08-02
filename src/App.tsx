@@ -5,6 +5,7 @@ import Direct from './pages/Direct';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import PasswordReset from './pages/PasswordReset';
+import NotFound from './pages/NotFound';
 
 export default function App() {
   return (
@@ -18,6 +19,8 @@ export default function App() {
         <Route path='/register/' element={<SignUp />} />
 
         <Route path='/accounts/password/reset/' element={<PasswordReset />} />
+
+        <Route path='*' element={<NotFound />} />
 
       </Routes>
     </BrowserRouter>
