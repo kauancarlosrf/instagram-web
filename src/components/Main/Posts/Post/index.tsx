@@ -7,6 +7,7 @@ import InformacoesGerais from "./InformacoesGerais";
 import BarraComentario from "./BarraComentario";
 
 type Props = {
+  id: number;
   imgPerfil: any;
   nameAccount: string;
   imgPost: any;
@@ -22,8 +23,9 @@ export default function Post(props: Props) {
     <Container>
       <Head imgPerfil={props.imgPerfil} nameAccount={props.nameAccount} />
       <Meio imgPost={props.imgPost} />
-      <BarraLike />
+      <BarraLike/>
       <InformacoesGerais
+        id={props.id}
         quantidadeCurtidas={props.quantidadeCurtidas}
         tempoAtras={props.tempoAtras}
         nameAccount={props.nameAccount}

@@ -1,7 +1,8 @@
-import React from "react";
-import { Container, QuantidadeCurtidas, ContainerDescricao, NomeDoPerfil, MostrarTodaDescricao, TempoAtras, VerMaisComentarios } from './style';
+import React, { useState } from "react";
+import { Container, QuantidadeCurtidas, BoxDescricao, NomeDoPerfil, MostrarTodaDescricao, TempoAtras, VerMaisComentarios } from './style';
 
 type Props = {
+  id: number;
   quantidadeCurtidas: number;
   quantidadeComentarios: number;
   tempoAtras: string;
@@ -10,6 +11,8 @@ type Props = {
 }
 
 export default function InformacoesGerais(props: Props) {
+  const [mostarMais, setMostrarMais] = useState(false);
+  const preview_descricao = props.descricao.substring(0, 60);
 
   return (
     <Container>
@@ -18,11 +21,20 @@ export default function InformacoesGerais(props: Props) {
         {props.quantidadeCurtidas} curtida{props.quantidadeCurtidas>0 ? `s` : ``}
       </QuantidadeCurtidas>
 
-      <ContainerDescricao>
-        <NomeDoPerfil>{props.nameAccount} </NomeDoPerfil>
-        <span>{props.descricao}</span>
-        <MostrarTodaDescricao>... mais</MostrarTodaDescricao>
-      </ContainerDescricao>
+      <BoxDescricao>
+        <NomeDoPerfil href={`/${props.nameAccount}/`}>{props.nameAccount} </NomeDoPerfil>
+        {
+          mostarMais === false
+          ? <span>{preview_descricao}</span>
+          : <span>{props.descricao}</span>
+        }
+        {
+          mostarMais === false
+          ? <MostrarTodaDescricao onClick={() => {setMostrarMais(true)}}>... mais</MostrarTodaDescricao>
+          : <></>
+        }
+        
+      </BoxDescricao>
 
       <VerMaisComentarios>
         Ver {props.quantidadeComentarios} comentário

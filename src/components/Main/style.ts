@@ -9,7 +9,7 @@ export const ContainerInteiro = styled.div`
   width: 100vh;
   height: 100vh;
 
-  gap: 20px;
+  gap: 27px;
 
   margin: 86px auto 0;
 `;

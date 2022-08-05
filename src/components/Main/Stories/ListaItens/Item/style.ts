@@ -36,7 +36,8 @@ export const Image = styled.img`
 `;
 
 export const NomePerfil = styled.span`
-  width: 74px;
+  width: 100%auto;
+  max-width: 74px;
   height: 16px;
 
   padding: 0 2px;

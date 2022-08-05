@@ -8,20 +8,21 @@ export const Container = styled.div`
   width: 100%;
   height: 46px;
 
-  padding: 0 12px 6px;
+  padding: 0 4px 6px;
   margin: 4px 0 0;
 `;
 
-export const DivLikeCommentShare = styled.div`
+export const BoxLikeCommentShare = styled.div`
   display: flex;
   align-items: center;
 `;
 
 export const BotaoLike = styled.button`
-  padding: 8px 8px 8px 1px;
+  padding: 8px;
 
   &:hover {
     cursor: pointer;
+    color: #777;
   }
 `;
 
@@ -30,6 +31,7 @@ export const BotaoComentarios = styled.button`
 
   &:hover {
     cursor: pointer;
+    color: #777;
   }
 `;
 
@@ -38,13 +40,16 @@ export const BotaoCompartilhar = styled.button`
 
   &:hover {
     cursor: pointer;
+    color: #777;
   }
 `;
 
 export const BotaoSavePost = styled.button`
   padding: 8px;
+  color: #222;
+  cursor: pointer;
 
   &:hover {
-    cursor: pointer;
+    color: #777;
   }
 `;

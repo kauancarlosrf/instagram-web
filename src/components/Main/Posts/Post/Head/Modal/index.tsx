@@ -64,7 +64,7 @@ export default function ModalUnstyledDemo() {
   return (
     <div>
       <BotaoOpenModal type="button" onClick={handleOpen}>
-        <MoreHorizIcon />
+        <MoreHorizIcon sx={{ color: '#383838' }} />
       </BotaoOpenModal>
       <Modal
         aria-labelledby="unstyled-modal-title"

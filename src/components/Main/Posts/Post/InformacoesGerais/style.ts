@@ -19,18 +19,19 @@ export const QuantidadeCurtidas = styled.span`
   }
 `;
 
-export const ContainerDescricao = styled.span`
+export const BoxDescricao = styled.div`
   font-size: 14px;
+  line-height: 18px;
 `;
 
 export const NomeDoPerfil = styled.a`
+  color: #262626;
   font-weight: bold;
   margin-right: 1px;
-
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
-    cursor: pointer;
   }
 `;
 

@@ -3,11 +3,10 @@ import Icon from './Icon';
 import { dadosUsuario } from '../../../data/dados';
 import { UserProfileImage, Container } from './style';
 
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
-import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
-import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import { AiOutlineHome, AiOutlineHeart } from 'react-icons/ai';
+import { RiMessengerLine } from 'react-icons/ri';
+import { BiPlusCircle } from 'react-icons/bi';
+import { MdOutlineExplore } from 'react-icons/md';
 
 export default function ListaIcons() {
 
@@ -15,19 +14,19 @@ export default function ListaIcons() {
     <>
       <Container>
         <Icon link='/'>
-          <HomeOutlinedIcon sx={{ fontSize: 27 }} />
+          <AiOutlineHome style={{ width: 27, height: 27 }} />
         </Icon>
         <Icon link='/direct/inbox/'>
-          <SendOutlinedIcon sx={{ fontSize: 27 }} />
+          <RiMessengerLine style={{ width: 27, height: 27 }} />
         </Icon>
         <Icon link='#'>
-          <AddCircleOutlineOutlinedIcon sx={{ fontSize: 27 }} />
+          <BiPlusCircle style={{ width: 27, height: 27 }} />
+        </Icon>
+        <Icon link='/explore/'>
+          <MdOutlineExplore style={{ width: 27, height: 27 }} />
         </Icon>
         <Icon link='#'>
-          <ExploreOutlinedIcon sx={{ fontSize: 27 }} />
-        </Icon>
-        <Icon link='#'>
-          <FavoriteBorderOutlinedIcon sx={{ fontSize: 27 }} />
+          <AiOutlineHeart style={{ width: 27, height: 27 }} />
         </Icon>
         <UserProfileImage src={dadosUsuario.userImg} alt={`Foto do perfil de ${dadosUsuario.userName}`} />
       </Container>

@@ -1,20 +1,22 @@
-import React from "react";
-import { Container, DivLikeCommentShare, BotaoLike, BotaoComentarios, BotaoCompartilhar, BotaoSavePost } from "./style";
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import React, { useState } from "react";
+import { Container, BoxLikeCommentShare, BotaoLike, BotaoComentarios, BotaoCompartilhar, BotaoSavePost } from "./style";
+//icons
 import ModeCommentOutlinedIcon from '@mui/icons-material/ModeCommentOutlined';
-import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
-import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
+import { AiOutlineHeart } from 'react-icons/ai';
+import { FcLike } from 'react-icons/fc';
+import { FiSend } from 'react-icons/fi';
+import { RiBookmarkLine, RiBookmarkFill } from 'react-icons/ri';
 
 export default function BarraLike() {
+  const [savedPost, setSavedPost] = useState(false);
 
   return (
     <Container>
       
-
-      <DivLikeCommentShare>
+      <BoxLikeCommentShare>
 
         <BotaoLike>
-          <FavoriteBorderOutlinedIcon />
+          <AiOutlineHeart style={{ width: 27, height: 27 }} />
         </BotaoLike>
 
         <BotaoComentarios>
@@ -22,16 +24,18 @@ export default function BarraLike() {
         </BotaoComentarios>  
 
         <BotaoCompartilhar>
-          <SendOutlinedIcon />
+          <FiSend style={{ width: 25, height: 25 }} />
         </BotaoCompartilhar>
 
-      </DivLikeCommentShare>
+      </BoxLikeCommentShare>
 
-
-      <BotaoSavePost>
-        <BookmarkBorderOutlinedIcon />
+      <BotaoSavePost onClick={() => {setSavedPost(!savedPost)}}>
+        {
+          savedPost === false
+          ? <RiBookmarkLine style={{ width: 23, height: 23, color: '#222' }} />
+          : <RiBookmarkFill style={{ width: 23, height: 23, color: '#222' }} />
+        }
       </BotaoSavePost>
-
 
     </Container>
   );

@@ -9,6 +9,7 @@ type Props = {
 }
 
 export default function Item(props: Props) {
+  let nome_formatado = props.nameAccount.substring(0, 9) + '...';
 
   return (
     <>
@@ -16,7 +17,13 @@ export default function Item(props: Props) {
         <Border>
           <Image src={props.imgPerfil} alt={`${props.namePerfil}`} />
         </Border>
-        <NomePerfil>{props.namePerfil}</NomePerfil>
+        <NomePerfil>
+          {
+            props.nameAccount.length > 10
+            ? nome_formatado
+            : props.nameAccount
+          }
+        </NomePerfil>
       </ButtonContainer>
     </>
   );
