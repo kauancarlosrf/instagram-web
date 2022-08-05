@@ -18,7 +18,7 @@ export const CampoDePesquisa = styled.input`
   width: 100%;
   height: 25px;
   
-  padding-left: 8px;
+  padding-left: 9px;
   
   font-size: 16px;
   color: #262626;

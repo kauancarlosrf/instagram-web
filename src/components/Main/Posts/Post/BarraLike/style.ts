@@ -26,15 +26,6 @@ export const BotaoLike = styled.button`
   }
 `;
 
-export const BotaoComentarios = styled.button`
-  padding: 8px;
-
-  &:hover {
-    cursor: pointer;
-    color: #777;
-  }
-`;
-
 export const BotaoCompartilhar = styled.button`
   padding: 8px;
 
@@ -50,6 +41,6 @@ export const BotaoSavePost = styled.button`
   cursor: pointer;
 
   &:hover {
-    color: #777;
+    color: '#777';
   }
 `;

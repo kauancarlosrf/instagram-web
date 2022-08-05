@@ -6,3 +6,4 @@
 - Styled-Components [site](https://styled-components.com/)
 - Material UI [site](https://mui.com/)
 - React Router v6 [site](https://reactrouter.com/)
+- React Icons [site](https://react-icons.github.io/react-icons)
