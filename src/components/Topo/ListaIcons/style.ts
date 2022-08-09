@@ -10,9 +10,3 @@ export const Container = styled.div`
 
   gap: 22px;
 `;
-
-export const UserProfileImage = styled.img`
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-`;

@@ -23,7 +23,7 @@ export const IconeMensagens = styled.div`
   border-radius: 50%;
   border: 2px solid #383838;
 
-  transform: rotate(-23deg);
+  transform: rotate(19deg);
   margin-bottom: 3px;
 `;
 

@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, IconeMensagens, Titulo, SubTitulo, BotaoEstranhoEnviarMensagem } from "./style";
-import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
+import { FiSend } from 'react-icons/fi';
 
 export default function BoxMensagens() {
 
   return (
     <Container>
       <IconeMensagens>
-        <SendOutlinedIcon sx={{ fontSize: 60 }} />
+        <FiSend style={{ width: 50, height: 50, color: '#383838', marginRight: 10 }} />
       </IconeMensagens>
 
       <Titulo>Suas mensagens</Titulo>

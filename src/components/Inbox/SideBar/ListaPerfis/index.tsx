@@ -10,7 +10,7 @@ export default function ListaPerfis() {
     
       {
         listaDirects.map((item, index) => (
-          <ItemPerfil imgPerfil={item.imgPerfil} userName={item.userName} ultimaVezOnline={item.ultimaVezOnline} />
+          <ItemPerfil key={item.nameAccount} imgPerfil={item.imgPerfil} nameAccount={item.nameAccount} userName={item.userName} ultimaVezOnline={item.ultimaVezOnline} />
         ))
       }
     

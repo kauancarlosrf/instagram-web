@@ -25,8 +25,6 @@ export const Login = styled.form`
 `;
 
 export const Logo = styled.img`
-  width: 175px;
-  height: 51px;
   margin: 37px 88px;
 `
 export const Cadastro = styled.div`

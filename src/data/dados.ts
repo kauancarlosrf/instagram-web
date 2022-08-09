@@ -6,6 +6,8 @@ import InstitutoSaoRobertoImg from '../assets/images/stories/instituto_sao_rober
 import RocketseatImg from '../assets/images/stories/rocketseat.jpg';
 import ReactImg from '../assets/images/stories/react.jpg';
 import PedroAugustoImg from '../assets/images/stories/pedro_augusto.jpg';
+import VitorManoelPerfilImg from '../assets/images/stories/vitor_manoel.jpg';
+import JoaoFujiiPerfilImg from '../assets/images/stories/joao_fujii.jpg';
 
 //sugestoes para seguir
 import LucasMontanoPerfilImg from '../assets/images/sugestoes-para-seguir/lucasmontano.jpg';
@@ -116,52 +118,62 @@ export const dadosPosts = [
 export const listaDirects = [
   {
     imgPerfil: LucasMontanoPerfilImg,
-    userName: 'Kauan Certi Cenci',
+    nameAccount: 'lucasmontano',
+    userName: 'Lucas Montano',
     ultimaVezOnline: '15 h'
   },
   {
-    imgPerfil: FabioSalgadoPerfilImg,
-    userName: 'João Da Silva',
+    imgPerfil: ArautosDoEvangelhoImg,
+    nameAccount: 'arautosmaringa',
+    userName: 'Arautos Maringá',
     ultimaVezOnline: '13 h'
   },
   {
-    imgPerfil: FabioAkitaPerfilImg,
-    userName: 'Pereira Matieus',
-    ultimaVezOnline: '15 sem'
+    imgPerfil: PedroAugustoImg,
+    nameAccount: 'pedroaugusto_ps',
+    userName: 'Pedro Augusto',
+    ultimaVezOnline: '5 sem'
   },
   {
     imgPerfil: MiguelSorianiPerfilImg,
-    userName: 'Matheus Cascão',
+    nameAccount: 'omiguelsoriani',
+    userName: 'Miguel Soriani',
     ultimaVezOnline: '15 min'
   },
   {
     imgPerfil: PadreLeonardoPerfilImg,
-    userName: 'João Vitor',
+    nameAccount: 'padreleonardowagner',
+    userName: "Pe. Leonardo Wagner",
     ultimaVezOnline: '2 d'
   },
   {
-    imgPerfil: FabioAkitaPerfilImg,
-    userName: 'Pereira Matieus',
-    ultimaVezOnline: '15 sem'
-  },
-  {
-    imgPerfil: MiguelSorianiPerfilImg,
-    userName: 'Matheus Cascão',
+    imgPerfil: VitorManoelPerfilImg,
+    nameAccount: 'vitormanoelh',
+    userName: 'Vitor Manoel',
     ultimaVezOnline: '15 min'
   },
   {
-    imgPerfil: PadreLeonardoPerfilImg,
-    userName: 'João Vitor',
-    ultimaVezOnline: '2 d'
+    imgPerfil: InstitutoSaoRobertoImg,
+    nameAccount: 'inst.saoroberto',
+    userName: 'Instituto São Roberto Belarmino',
+    ultimaVezOnline: '47 min'
+  },
+  {
+    imgPerfil: JoaoFujiiPerfilImg,
+    nameAccount: 'joao_fujii',
+    userName: 'joao arthur',
+    ultimaVezOnline: '1 d'
+  },
+  {
+    imgPerfil: FabioSalgadoPerfilImg,
+    nameAccount: 'fabiosaldecarvalho',
+    userName: 'Fábio Salgado de Carvalho',
+    ultimaVezOnline: '13 sem'
   },
   {
     imgPerfil: FabioAkitaPerfilImg,
-    userName: 'Pereira Matieus Creuza',
-    ultimaVezOnline: '15 sem'
-  },
-  {
-    imgPerfil: LucasMontanoPerfilImg,
-    userName: 'Kauan Certi Cenci',
-    ultimaVezOnline: '15 h'
+    nameAccount: 'akitaonrails',
+    userName: 'Fabio Makoto Akita',
+    ultimaVezOnline: '19 h'
   },
 ];

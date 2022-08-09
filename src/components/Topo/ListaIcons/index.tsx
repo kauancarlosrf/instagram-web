@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from './Icon';
-import { dadosUsuario } from '../../../data/dados';
-import { UserProfileImage, Container } from './style';
+import Popover from './Popover';
+import { Container } from './style';
 
 import { AiOutlineHome, AiOutlineHeart } from 'react-icons/ai';
 import { RiMessengerLine } from 'react-icons/ri';
@@ -28,7 +28,7 @@ export default function ListaIcons() {
         <Icon link='#'>
           <AiOutlineHeart style={{ width: 27, height: 27 }} />
         </Icon>
-        <UserProfileImage src={dadosUsuario.userImg} alt={`Foto do perfil de ${dadosUsuario.userName}`} />
+        <Popover />
       </Container>
     </>
   );

@@ -9,7 +9,7 @@ export default function Suggestion() {
     <>
       {
         sugestoesParaSeguir.map((item, index) => (
-          <Container>
+          <Container key={item.nameAccount}>
 
             <Image src={item.imgPerfil} alt={`Imagem de ${item.nameAccount}`} />
             <InformacoesConta>

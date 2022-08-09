@@ -11,6 +11,7 @@ export default function Posts() {
         dadosPosts.map((item, index) => (
 
           <Post
+            key={item.id}
             id={item.id}
             imgPerfil={item.imgPerfil}
             nameAccount={item.nameAccount}
